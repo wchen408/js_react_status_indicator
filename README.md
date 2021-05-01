@@ -66,7 +66,7 @@ To reproduce -
 
 1. uncomment line 38 to 43 underneath`#OPTION2` in  `React.useEffect` in the `App` component. Save.
 
-   ```
+   ```javascript
      React.useEffect(() => {
        // // OPTION #1 - Desire Behavior
        // setTimeout(() => {
