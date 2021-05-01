@@ -4,9 +4,7 @@
 
 #### Issue
 
-I'm working on a computation-heavy web app and I want users to know the progression the computation so that the app doesn't appear as stale.
-
-Basically I have three messages to indicate in state of the computation - 
+I'm working on a computation-heavy web app and I want users to know the progression on the computation so that the app doesn't appear as stale. Basically I have three messages to indicate in state of the computation - 
 
 * Loading
 
@@ -14,7 +12,7 @@ Basically I have three messages to indicate in state of the computation -
 
 * 80% Finished
 
-I created a `displayMsg` state in the `App` component, which get sent down as a prop to a child component `Copy`.  In the setter method for `displayMsg`, `setDisplayMsg`,  is invoked in different computation stages. However, I'm only seeing `Loading` and `80% Finished` while the intermediate stage, `50% Finished`, is skipped.
+I created a `displayMsg` state in the `App` component, which get sent down as a prop to a child component `Copy`.  The setter method for `displayMsg`, `setDisplayMsg`,  is invoked in different computation stages. However, I'm only seeing `Loading` and `80% Finished` while the intermediate stage, `50% Finished`, is skipped.
 
 
 
